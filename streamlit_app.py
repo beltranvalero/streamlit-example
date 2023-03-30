@@ -40,4 +40,10 @@ st.pyplot(fig)
 # Calculate MSE
 predicted = slope*data['form'] + intercept
 mse = np.mean((data['prev18'] - predicted)**2)
-st.write('Mean Squared Error:', mse)
+# st.write('Mean Squared Error:', mse)
+
+# Display MSE
+mse_text = f'MSE: {mse:.2f}'
+ax.text(0.05, 0.95, mse_text, transform=ax.transAxes, fontsize=10, va='top')
+
+st.pyplot(fig)
