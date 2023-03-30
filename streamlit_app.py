@@ -23,7 +23,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = 
+data = pd.read_csv('Cali2018Form.csv')
+print(data)
 
 # Load data
 @st.cache
