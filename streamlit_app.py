@@ -46,4 +46,4 @@ mse_text = f'MSE: {mse:.2f}'
 bbox_props = dict(boxstyle="round,pad=0.3", fc="white", ec="black", lw=1)
 ax.text(0.95, 0.95, mse_text, transform=ax.transAxes, fontsize=10, va='top', ha='right', bbox=bbox_props)
 
-#st.pyplot(fig)
+st.pyplot(fig)
