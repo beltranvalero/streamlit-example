@@ -7,8 +7,8 @@ import streamlit as st
 """
 # Impact of environmental factors on public health using spatial analysis
 
-### **Asthma**
-Asthma
+##### Asthma
+
 8 percent of the US population suffers from asthma
 One of the most prevalent chronic diseases in the US
 Send over 1.2 million people annually to the emergency room
