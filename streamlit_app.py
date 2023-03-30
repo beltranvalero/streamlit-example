@@ -26,14 +26,6 @@ import numpy as np
 data = pd.read_csv('Cali2018Form.csv')
 print(data)
 
-# Load data
-@st.cache
-def load_data():
-    data = pd.read_csv('your_dataset.csv')
-    return data
-
-data = load_data()
-
 # Sidebar options
 st.sidebar.header('Regression Parameters')
 slope = st.sidebar.slider('Slope', -10.0, 10.0, 1.0)
