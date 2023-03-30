@@ -9,19 +9,14 @@ import streamlit as st
 
 ##### Asthma
 
-8 percent of the US population suffers from asthma
-One of the most prevalent chronic diseases in the US
-Send over 1.2 million people annually to the emergency room
-Proposal
-A geospatial correlation map between pollutants and asthma rates
-Asthma is not caused by just one thing but can be influenced by many factors
-Showing how pollutants affect asthma rates as a correlation
+Around 8% of the US population suffers from asthma. Asthma has become one of the most prevalent diseases in the US, 
+sending over 1.2 million people annauully to the emergency room
+
+##### Our proposal
+A geospatial correlation map between pollutants and asthma rates. We certanly know that asthma is not caused bu just one factor but it can be influenced by many.
+Our goal will be show how diffferent polutants in the air affect asthma rate with correlations.
 
 
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
-
-In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
 
