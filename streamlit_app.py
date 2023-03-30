@@ -35,7 +35,6 @@ ax.scatter(data['form'], data['prev18'])
 ax.plot(data['form'], slope*data['form'] + intercept, color='red')
 ax.set_xlabel('Form')
 ax.set_ylabel('Prev18')
-st.pyplot(fig)
 
 # Calculate MSE
 predicted = slope*data['form'] + intercept
@@ -44,6 +43,7 @@ mse = np.mean((data['prev18'] - predicted)**2)
 
 # Display MSE
 mse_text = f'MSE: {mse:.2f}'
-ax.text(0.05, 0.95, mse_text, transform=ax.transAxes, fontsize=10, va='top')
+bbox_props = dict(boxstyle="round,pad=0.3", fc="white", ec="black", lw=1)
+ax.text(0.95, 0.95, mse_text, transform=ax.transAxes, fontsize=10, va='top', ha='right', bbox=bbox_props)
 
 st.pyplot(fig)
