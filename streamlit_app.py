@@ -25,8 +25,8 @@ print(data)
 
 # Sidebar options
 st.sidebar.header('Regression Parameters')
-slope = st.sidebar.slider('Slope', -10.0, 10.0, 1.0)
-intercept = st.sidebar.slider('Intercept', -10.0, 10.0, 0.0)
+slope = st.sidebar.slider('Slope', 0, 10.0, 1.0)
+intercept = st.sidebar.slider('Intercept', 5, 10.0, 0.0)
 
 # Scatter plot and regression line
 fig, ax = plt.subplots()
