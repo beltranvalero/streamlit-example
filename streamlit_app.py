@@ -5,9 +5,18 @@ import pandas as pd
 import streamlit as st
 
 """
-# Welcome to Streamlit!
+# Impact of environmental factors on public health using spatial analysis
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
+### Asthma
+Asthma
+8 percent of the US population suffers from asthma
+One of the most prevalent chronic diseases in the US
+Send over 1.2 million people annually to the emergency room
+Proposal
+A geospatial correlation map between pollutants and asthma rates
+Asthma is not caused by just one thing but can be influenced by many factors
+Showing how pollutants affect asthma rates as a correlation
+
 
 If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
 forums](https://discuss.streamlit.io).
