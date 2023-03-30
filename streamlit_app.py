@@ -18,6 +18,37 @@ Our goal will be show how diffferent polutants in the air affect asthma rate wit
 
 
 """
+import streamlit as st
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load data
+@st.cache
+def load_data():
+    data = pd.read_csv('your_dataset.csv')
+    return data
+
+data = load_data()
+
+# Sidebar options
+st.sidebar.header('Regression Parameters')
+slope = st.sidebar.slider('Slope', -10.0, 10.0, 1.0)
+intercept = st.sidebar.slider('Intercept', -10.0, 10.0, 0.0)
+
+# Scatter plot and regression line
+fig, ax = plt.subplots()
+ax.scatter(data['variable1'], data['variable2'])
+ax.plot(data['variable1'], slope*data['variable1'] + intercept, color='red')
+ax.set_xlabel('Variable 1')
+ax.set_ylabel('Variable 2')
+st.pyplot(fig)
+
+# Calculate MSE
+predicted = slope*data['variable1'] + intercept
+mse = np.mean((data['variable2'] - predicted)**2)
+st.write('Mean Squared Error:', mse)
+
 
 
 with st.echo(code_location='below'):
